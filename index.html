@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tienda PID</h1>
+        <div class="cart-icon" id="cartIcon">🛒 <span id="cartCount">0</span></div>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>Nuestros Productos</h2>
+            <div class="product-list" id="productList">
+                <!-- Productos se cargarán con JS -->
+            </div>
+        </section>
+
+        <section class="cart-modal" id="cartModal">
+            <div class="modal-content">
+                <span class="close-modal" id="closeModal">&times;</span>
+                <h2>Tu Carrito</h2>
+                <div class="cart-items" id="cartItems">
+                    <!-- Ítems del carrito se cargarán aquí -->
+                </div>
+                <div class="cart-total">
+                    <p>Total: $<span id="cartTotal">0</span></p>
+                    <button id="checkoutBtn">Finalizar Compra</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
