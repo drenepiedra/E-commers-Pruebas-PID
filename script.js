@@ -18,7 +18,7 @@ const products = [
         id: 3,
         name: "Teclado Logitech Pro X",
         price: 69.99,
-        description: "Producto importante para la eficiencia , no dude en comrar el mejor teclado del mercado ",
+        description: "Producto importante para la eficiencia , no dude en comprar el mejor teclado del mercado ",
         image: "images/teclado.jpg"
     }
 ];
