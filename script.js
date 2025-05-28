@@ -1,25 +1,56 @@
-// Datos de productos (simulando una base de datos)
 const products = [
     {
         id: 1,
         name: "Laptop ",
         price: 199.99,
         description: "Si desea una buena herramienta esta es la indicada",
-        image: "images/laptop.jpg"
+        image: "images/laptop.webp"
     },
     {
         id: 2,
         name: "Mouse Logitech G502 Hero",
         price: 56.99,
-        description: "Mejore su entorno de trabajo con nuestro mouse de muy buena calidad",
-        image: "images/Logitech.jpg"
+        description: "Mejore su  trabajo con nuestro mouse de muy buena calidad",
+        image: "images/Logitech.webp"
     },
     {
         id: 3,
         name: "Teclado Logitech Pro X",
         price: 69.99,
-        description: "Producto importante para la eficiencia , no dude en comprar el mejor teclado del mercado ",
-        image: "images/teclado.jpg"
+        description: "Producto importante para la eficiencia,no dude en comprarlo",
+        image: "images/teclado.webp"
+    },
+    {
+        id: 4,
+        name: "Auriculares HyperX Cloud II",
+        price: 99.99,
+        description: "Inmersión total en tus partidas o trabajos diarios",
+        image: "images/Auriculares HyperX Cloud II.webp",
+        category: "audio"
+    },
+    {
+        id: 5,
+        name: "Silla Gamer DXRacer",
+        price: 149.99,
+        description: "Comodidad extrema para largas sesiones de juego o trabajo",
+        image: "images/Silla Gamer DXRacer.webp",
+        category: "ergonomia"
+    },
+    {
+        id: 6,
+        name: "Monitor Curvo 27'' 144Hz",
+        price: 299.99,
+        description: "Experiencia visual avanzada para gamers y profesionales",
+        image: "images/Monitor Curvo 27'' 144Hz.webp",
+        category: "monitores"
+    },
+    {
+        id: 7,
+        name: "Tarjeta Gráfica RTX 4080",
+        price: 899.99,
+        description: "Potencia gráfica para juegos ultra HD",
+        image: "images/Tarjeta Gráfica RTX 4080.webp",
+        category: "componentes"
     }
 ];
 
@@ -176,7 +207,7 @@ function checkout() {
     }
     
     // Simular proceso de compra
-    alert(`Compra realizada! Total: $${cartTotal.textContent}`);
+    alert(`Compra realizada! Total: $${cartTotal.textContent}` + "Recibirá su producto con la mayor brevedad posible");
     cart = [];
     updateCart();
     cartModal.style.display = 'none';

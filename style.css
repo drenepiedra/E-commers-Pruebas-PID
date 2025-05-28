@@ -9,6 +9,7 @@ header {
     background-color: #333;
     color: white;
     padding: 1rem;
+    position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,6 +18,13 @@ header {
 .cart-icon {
     cursor: pointer;
     font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+
+/* Ocultar el contador cuando está en cero */
+.cart-count:empty {
+    display: none !important;
 }
 
 .products {
