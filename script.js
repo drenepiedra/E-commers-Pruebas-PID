@@ -207,7 +207,7 @@ function checkout() {
     }
     
     // Simular proceso de compra
-    alert(`Compra realizada! Total: $${cartTotal.textContent}` + "Recibirá su producto con la mayor brevedad posible");
+    alert(`Compra realizada! Total: $${cartTotal.textContent}` + " Recibirá su producto con la mayor brevedad posible");
     cart = [];
     updateCart();
     cartModal.style.display = 'none';
