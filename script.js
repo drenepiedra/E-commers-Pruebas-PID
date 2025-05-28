@@ -199,7 +199,7 @@ function removeItem(event) {
 }
 
 // Función para finalizar compra
-function checkout() {
+function procesarPago() {
     // Condicional para carrito vacío
     if (cart.length === 0) {
         alert('El carrito está vacío');
@@ -228,7 +228,7 @@ window.addEventListener('click', (event) => {
     }
 });
 
-checkoutBtn.addEventListener('click', checkout);
+checkoutBtn.addEventListener('click', procesarPago);
 
 // Inicializar la página
 loadProducts();
